@@ -1,4 +1,5 @@
 ﻿using AGV.Models;
+using AGV.Repositories;
 using AGV.Repositories.Interfaces;
 using Azure.Core;
 using Microsoft.AspNetCore.Http;
@@ -32,22 +33,29 @@ namespace AGV.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<RequestModel>> AddGood([FromBody] RequestModel requestModel)
+        public async Task<ActionResult<RequestModel>> AddRequest([FromBody] RequestModel requestModel)
         {
             RequestModel request = await _requestRepository.Add(requestModel);
             return Ok(request);
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult<RequestModel>> UpdateGood([FromBody] RequestModel requestModel, int id)
+        public async Task<ActionResult<RequestModel>> UpdateRequest([FromBody] RequestModel requestModel, int id)
         {
             requestModel.Id = id;
             RequestModel request = await _requestRepository.Update(requestModel, id);
             return Ok(request);
         }
 
+        [HttpPut("/changeStatus/{id}")]
+        public async Task<ActionResult<RequestModel>> UpdateStatus(int id, int status)
+        {
+            RequestModel request = await _requestRepository.ChangeStatus(id, status);
+            return Ok(request);
+        }
+
         [HttpDelete("{id}")]
-        public async Task<ActionResult<RequestModel>> DeleteGood(int id)
+        public async Task<ActionResult<RequestModel>> DeleteRequest(int id)
         {
             bool delete = await _requestRepository.Delete(id);
             return Ok(delete);

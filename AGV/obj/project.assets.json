@@ -4530,11 +4530,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dvdsl\\OneDrive\\Ambiente de Trabalho\\l\\MinhasCoisas\\Curriculo_Empregos\\Bosch\\AGV\\AGV.csproj",
+      "projectUniqueName": "C:\\Users\\dvdsl\\OneDrive\\Ambiente de Trabalho\\AGV\\AGV\\AGV.csproj",
       "projectName": "AGV",
-      "projectPath": "C:\\Users\\dvdsl\\OneDrive\\Ambiente de Trabalho\\l\\MinhasCoisas\\Curriculo_Empregos\\Bosch\\AGV\\AGV.csproj",
+      "projectPath": "C:\\Users\\dvdsl\\OneDrive\\Ambiente de Trabalho\\AGV\\AGV\\AGV.csproj",
       "packagesPath": "C:\\Users\\dvdsl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dvdsl\\OneDrive\\Ambiente de Trabalho\\l\\MinhasCoisas\\Curriculo_Empregos\\Bosch\\AGV\\obj\\",
+      "outputPath": "C:\\Users\\dvdsl\\OneDrive\\Ambiente de Trabalho\\AGV\\AGV\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

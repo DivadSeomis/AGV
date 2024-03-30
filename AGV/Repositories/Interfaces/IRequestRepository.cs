@@ -12,6 +12,8 @@ namespace AGV.Repositories.Interfaces
 
         Task<RequestModel> Update(RequestModel request, int id);
 
+        Task<RequestModel> ChangeStatus(int id, int status);
+
         Task<bool> Delete(int id);
     }
 }

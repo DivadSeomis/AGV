@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AGV")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e4670eb19652e53c5959f5ca352438dc7cf1317")]
 [assembly: System.Reflection.AssemblyProductAttribute("AGV")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AGV")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
